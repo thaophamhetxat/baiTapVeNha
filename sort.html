@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // sort() trong JavaScript cho phép  sắp xếp các phần tử của một mảng.
+    let p = [5, 4, 3, 2, 1];
+    let first = 0;
+    let last = p.length - 1;
+
+    function sort_to_p(p) {
+        while (first < last) {
+            let c = p[first];
+            p[first] = p[last];
+            p[last] = c;
+            first++;
+            last--;
+        }
+        return p;
+
+    }
+
+    sort_to_p(p);
+    document.write(p);
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+            let mang1 = ["Hello", "1", "2"];
+            let mang2 = ["xinchao", "mot", "hai"];
+            let chuoi = prompt("Nhập vào chuỗi cần tìm: ");
+
+            function timKiem(chuoi) {
+                    let dauRa = -1;
+                    for (let i = 0; i < mang1.length; i++) {
+                        if (chuoi == mang1[i]) {
+                            dauRa = i;
+                        }
+                    }
+                    return dauRa;
+                    alert(dauRa);
+                }
+
+            if (timKiem(chuoi) == -1) {
+                    alert("Không có trong mảng!");
+                } else {
+                    alert(mang2[timKiem(chuoi)]);
+        }
+</script>
+
+</body>
+</html>
